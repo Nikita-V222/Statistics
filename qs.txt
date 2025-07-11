@@ -1,0 +1,55 @@
+qs
+
+Q1)Extract a dataset of your choice and compute the correlation between
+any two variables and visualize the relationship using scatter plot.
+
+Q2)
+Apply the Pearson correlation test on a dataset, show the normality of
+variables using Q-Q plot and interpret the results.
+
+Q3) Consider the Price quotes dataset and perform the following:
+1. Generate the Summary statistics of the price quotes from Mary and Barry
+and interpret the results.
+2. The standard deviation of Mary’s price quotes is $11.05. The standard error
+of the mean of Mary’s price quotes is $3.19. Both are measures of variability.
+a) distinguish between these two numbers on the basis of how they are
+calculated and what they mean.
+b) Provide an interpretation of each number.
+
+Q4) Consider the Treatment Facility dataset and perform the following:
+1. Generate the Summary statistics of the Treatment facility and interpret
+the results.
+2. Determine what effect the reengineering effort had on the incidence
+behavioral problems and staff turnover.
+
+Q5)Consider the Baggage complaints dataset and perform the following:
+1. Generate the Summary statistics and interpret the results.
+2. Compare the baggage complaints for three airlines: American Eagle,
+Hawaiian, and United. Which airline has the best record? The worst? Are
+complaints getting better or worse over time? Are there other factors, such
+as destinations, seasonal effects or the volume of travelers that affect
+baggage performance?
+
+Q6)Consider the Medical Malpractice dataset and perform the following.
+1. Using descriptive statistics and graphical displays, explore claim payment
+amounts, and identify factors that appear to influence the amount of the
+payment.
+2. Use the data set to answer the following questions: What percentage of the
+sample involved Anesthesiologists? Dermatologists? Orthopedic surgeons?
+Is there any relationship between age of the patient and size of the payment?
+
+Q9) Consider the scores of ten students in SMIP and DBMS and Compute
+the Spearman rank correlation and Interpret the results using Python
+programming.
+SMIP 70 46 94 34 20 86 18 12 56 64 42
+DBMS 60 66 90 46 16 98 24 08 32 54 62
+
+Q10) Develop a Python code to build a simple Linear Regression model to
+predict sales units based on the advertising budget spent on TV. Display the
+statistical summary of the model.
+Sales 2 4 6 9 12 34 45
+TV 1 2 4 7 9 11 15
+
+Q11) Consider the Australian Drug Sales dataset and develop a Python
+code to perform Time Series Analysis and visualize using plots.
+
