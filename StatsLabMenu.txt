@@ -1,0 +1,27 @@
+StatsLabMenu
+
+1.Correlation – MPG vs HP
+
+2.Pearson Test – Normality (Q-Q Plot)
+
+3.Price Quotes – Mary vs Barry (SD & SE)
+
+4.Treatment Facility – Reengineering Effect
+
+5.Baggage Complaints – Airlines Comparison
+
+6.Medical Malpractice – Claims & Specialties
+
+7.Fish Prices – 1970 vs 1980 (Paired t-test)
+
+8.Patient Satisfaction & Fitness – Correlation Matrix
+
+9.Spearman Scores – SMIP vs DBMS Students  -Python
+
+10.Linear Regression – TV Ads vs Sales  -Python
+
+11.Drug Sales – Time Series Forecasting  -Python
+
+12.ANOVA & Non-Parametric – Iris Dataset
+
+

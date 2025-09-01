@@ -1,0 +1,77 @@
+python codes
+9,10,11 Q
+
+9. Spearman Scores – SMIP vs DBMS Students (Python)
+import pandas as pd
+from scipy.stats import spearmanr
+
+SMIP = [70, 46, 94, 34, 20, 86, 18, 12, 56, 64, 42]
+DBMS = [60, 66, 90, 46, 16, 98, 24, 8, 32, 54, 62]
+
+df = pd.DataFrame({'SMIP': SMIP, 'DBMS': DBMS})
+
+corr, p_value = spearmanr(df['SMIP'], df['DBMS'])
+
+print("Spearman Rank Correlation Coefficient:", corr)
+print("P-value:", p_value)
+
+if corr > 0:
+    relation = "positive"
+elif corr < 0:
+    relation = "negative"
+else:
+    relation = "no"
+
+print(f"Interpretation: The Spearman correlation ({corr:.3f}) indicates a {relation} association between SMIP and DBMS scores.")
+
+10. Linear Regression – TV Ads vs Sales (Python)
+import pandas as pd
+import statsmodels.api as sm
+import matplotlib.pyplot as plt
+import warnings
+
+warnings.filterwarnings("ignore")
+
+data = {
+    'TV': [1, 2, 4, 7, 9, 11, 15],
+    'Sales': [2, 4, 6, 9, 12, 34, 45]
+}
+df = pd.DataFrame(data)
+
+X = df['TV']
+Y = df['Sales']
+
+X = sm.add_constant(X)
+
+model = sm.OLS(Y, X).fit()
+print(model.summary())
+
+plt.scatter(df['TV'], df['Sales'], color='blue', label='Actual Data')
+plt.plot(df['TV'], model.predict(X), color='red', label='Fitted Line')
+plt.title("Linear Regression: Sales vs TV Advertising Budget")
+plt.xlabel("TV Advertising Budget")
+plt.ylabel("Sales")
+plt.legend()
+plt.show()
+
+11. Drug Sales – Time Series Forecasting (Python)
+import pandas as pd
+from statsmodels.tsa.holtwinters import ExponentialSmoothing
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("C:/Users/HP/Downloads/AusAntidiabeticDrug.csv", parse_dates=['ds'])
+
+df.set_index('ds', inplace=True)
+df.index.freq = 'MS'
+
+model = ExponentialSmoothing(df['y'], trend="add", seasonal="add", seasonal_periods=12)
+fit = model.fit()
+
+forecast = fit.forecast(24)
+
+plt.figure(figsize=(12,6))
+plt.plot(df['y'], label="Actual")
+plt.plot(fit.fittedvalues, label="Fitted")
+plt.plot(forecast, label="Forecast", color='red')
+plt.legend()
+plt.show()
